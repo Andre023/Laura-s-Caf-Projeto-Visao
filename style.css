@@ -420,26 +420,16 @@ body {
   margin: 0px;
 }
 
-.rodape-logos {
-  width: 60px;
-  height: 60px;
-}
-
-.rodape-logos img {
-  width: 100%;
-  height: 100%;
-}
-
 .rodape-direita-logos {
   position: absolute;
-  right: 60px;
+  right: 160px;
   display: flex;
   flex-direction: row;
   align-items: right;
   gap: 32px;
   padding: 24px;
   justify-content: space-around;
-  width: 200px;
+  width: 300px;
   height: 100%;
 }
 
@@ -542,4 +532,119 @@ button:hover {
   form {
     max-width: 100%;
   }
+}
+
+
+
+#lauras-mapModal {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #181E21;
+  box-shadow: #181E21 0px 0px 20px 0px;
+
+}
+
+#lauras-mapModal .modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#lauras-modalMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#lauras-mapLink {
+  width: 50px;
+  height: 50px;
+}
+
+#lauras-closeModal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+
+
+.menu{
+  left: 400px;
+  position:relative;
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.toggle{
+  position:relative;
+  height:50px;
+  width:50px;
+  background:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#333;
+  font-size:2rem;
+  cursor:pointer;
+  transition:1.25s;
+  z-index:5;
+}
+
+.menu.active{
+  transform:rotate(360deg);
+}
+.menu li{
+  position:absolute;
+  left: -95px;
+  list-style:none;
+  transition:0.5s;
+  transform:rotate(calc(180deg/4 * var(--i)));
+  transform-origin:120px;
+  scale:0;
+  transition-delay: calc(0.05s * var(--i));
+}
+.menu.active li{
+  scale:1;
+}
+.menu li a{
+  position:relative;
+  display:flex;
+  transform:rotate(calc(180deg/-4 * var(--i)));
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-size:1.75rem;
+  color:var(--clr);
+  box-shadow:0 3px 4px rgba(0,0,0,0.15);
+  transition:0.5s;
+}
+.menu li:hover a{
+  font-size:2.5rem;
+  box-shadow:0 0 0 2px var(--clr),
+    0 0 0 6px #fff;
+}
+
+/* Estilo para a imagem dentro do link */
+.menu li a img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* para tornar a imagem circular */
 }
