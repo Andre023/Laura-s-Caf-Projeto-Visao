@@ -605,8 +605,11 @@ button:hover {
   z-index:5;
 }
 
-.menu.active{
+.menu.active .toggle{
   transform:rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15),
+    0 0 0 2px #333,
+    0 0 0 8px #fff;
 }
 .menu li{
   position:absolute;
