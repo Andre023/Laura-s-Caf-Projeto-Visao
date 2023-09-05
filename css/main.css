@@ -1,0 +1,308 @@
+.conteudo {
+  background-color: #DCDFCC;
+  padding-top: 80px;
+}
+
+/* Estilos para o carrossel e conteúdo */
+.conteudo-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 50px;
+  height: 90vh;
+}
+
+/* Estilos adicionais para ajustar o carrossel à direita */
+.conteudo-principal-imagem-carrossel {
+  flex: 0 0 60%;
+  /* Define a largura do carrossel (20% do espaço disponível) */
+  max-width: 700px;
+  /* Ajusta a largura máxima do carrossel */
+  margin-top: 100px;
+  margin-bottom: 110px;
+  margin-right: 20px;
+  /* Empurre o carrossel para a direita */
+  border-radius: 30px;
+}
+
+.carousel-inner {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Ajuste opcional para deixar o texto do conteúdo escrito um pouco mais próximo do carrossel */
+.conteudo-texto-inicio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+/* Media query para dispositivos com telas menores */
+@media screen and (max-width: 768px) {
+  .conteudo-principal {
+    flex-direction: column;
+    /* Altera a direção do flexbox para ficar em coluna */
+  }
+
+  .conteudo-texto-inicio {
+    margin-right: 0;
+    /* Remove a margem direita para o texto ficar alinhado à esquerda */
+  }
+}
+
+
+.conteudo-titulo-inicio {
+  font-family: 'Rufina', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 3px solid #181E21;
+  width: 26%;
+}
+
+.conteudo-inicio-paragrafo {
+  margin: 40px 75px 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.texto-inicio {
+  color: #181E21;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.separador {
+  width: 100%;
+  height: 1.5px;
+  background-color: #181E21;
+}
+
+/* CSS Sobre nós */
+
+.conteudo-sobrenos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.conteudo-sobrenos-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 50px 0px;
+  padding-left: 90px;
+  gap: 70px;
+}
+
+.conteudo-sobrenos-subtitulo-historia-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-around;
+
+}
+
+.sobrenos-divisoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteudo-sobrenos-titulo {
+  margin-left: 90px;
+  font-family: 'Rufina', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 3px solid #181E21;
+  width: 17%;
+}
+
+.conteudo-sobrenos-subtitulo-historia,
+.conteudo-sobrenos-subtitulo-metodos,
+.conteudo-sobrenos-subtitulo-origem {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #181E21;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+
+}
+
+.conteudo-sobrenos-paragrafo-historia,
+.conteudo-sobrenos-paragrafo-metodos,
+.conteudo-sobrenos-paragrafo-origem {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #181E21;
+  text-align: justify;
+}
+
+.conteudo-sobrenos-imagem {
+  height: 200px;
+  margin-top: 20px;
+}
+
+/* CSS Menu */
+
+.colunas-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.conteudo-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  height: fit-content;
+  margin-bottom: 40px
+}
+
+.conteudo-menu-titulo {
+  font-family: 'Rufina', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 40px 0px 40px 90px;
+  border-bottom: 3px solid #181E21;
+  width: 10%;
+}
+
+.divisoes-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 32px;
+}
+
+.titulo-divisoes {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.coluna-1-a-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.coluna-4-a-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 32px;
+  justify-content: right;
+}
+
+.conteudo-imagem-cafe {
+  height: 150px;
+}
+
+.divisao-nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cafe-paragrafo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #181E21;
+}
+
+
+.cafe-preco {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #181E21;
+}
+
+/* CSS CONTATO */
+
+.conteudo-email-telefone-eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: left;
+}
+
+.conteudo-email-subtitulo,
+.conteudo-telefone-subtitulo,
+.conteudo-eventos-subtitulo,
+.conteudo-email-paragrafo,
+.conteudo-telefone-paragrafo,
+.conteudo-eventos-paragrafo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #181E21;
+}
+
+.conteudo-contato {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.conteudo-contato-int {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.conteudo-contato-titulo {
+  font-family: 'Rufina', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 3px solid #181E21;
+  width: 19%;
+  margin: 20px 0px 0px 70px;
+}
+
+.conteudo-contato-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px 0px 70px;
+}
+
+.conteudo-mapa-contato {
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+.form-contato {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divs-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-contato {
+  height: 100%;
+  width: 350px;
+  margin: -20px 0px -20px 0px;
+  position: absolute;
+  right: 0px;
+}
