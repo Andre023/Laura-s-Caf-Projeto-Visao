@@ -140,4 +140,12 @@
   .mobile-menu{
     display: block;
   }
+
+  .cabecalho-nome-cafe {
+  color: #FFF;
+  font-family: 'Rufina', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid #fff
+}
 }
